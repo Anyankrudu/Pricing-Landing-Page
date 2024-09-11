@@ -1,0 +1,289 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+/* COLORS */
+/* MAIN COLOR #0b7285
+GREY COLOR #e9fac8 */
+
+/* UNIVERSAL STYLE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* GENERAL STYLES AND BOXES */
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 920px;
+  margin: 0 auto;
+  padding: 2px 48px;
+}
+
+.primary-trustee-box,
+.sub-box,
+.customer {
+  margin-bottom: 128px;
+}
+
+.sub-box {
+  display: grid;
+  justify-items: end;
+}
+.customer {
+  margin-top: 16px;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sign-in-box {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.trustee-box {
+}
+
+a:link {
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.question-box {
+  /* display: grid;
+  grid-template-columns: 350px 474px; */
+  display: flex;
+  gap: 256px;
+}
+
+/* BTNS */
+.btn {
+  font-size: 10px;
+  border: none;
+}
+
+.sign-in-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.btn-customer-demo {
+}
+.btn-customer-trial {
+}
+
+.btn-category {
+  margin-top: 24px;
+  display: flex;
+  justify-content: end;
+}
+
+.btn-primary {
+  margin-top: 32px;
+  margin-bottom: 48px;
+  display: flex;
+  gap: 64px;
+  justify-content: center;
+}
+
+/* CUSTOMER */
+
+/* PRIMARY TRUSTEE SECTION */
+
+/* Primary */
+
+.primary-heading {
+  display: flex;
+  justify-content: center;
+}
+.primary-heading-text {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  width: 500px;
+  font-size: 44px;
+  margin-bottom: 80px;
+}
+
+.customer-options {
+  display: flex;
+  gap: 48px;
+}
+
+.customer-options-logo {
+  font-size: 16px;
+}
+
+.customer-options-links {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.sign-in-text {
+}
+
+.sign-in-buttons {
+  display: flex;
+}
+
+/* Categories */
+.category {
+  font-size: 14px;
+}
+
+.secondary-categories {
+  display: grid;
+  grid-template-columns: 150px 150px 150px;
+}
+
+.category-top,
+.category-bottom {
+  display: grid;
+  justify-items: center;
+}
+
+.categories {
+  margin-top: 32px;
+  display: grid;
+  justify-items: center;
+
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.category-price-details {
+  margin-top: 12px;
+}
+
+.category-price-plan {
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.category-price-initial {
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.category-price {
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.category-essentials {
+  align-self: self-end;
+}
+
+.all-category-groups {
+}
+
+.category-group {
+  margin-top: 12px;
+  font-size: 10px;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+}
+
+.category-details-heading {
+  margin-top: 32px;
+  margin-bottom: 12px;
+  font-size: 12px;
+}
+
+.category-caption {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.category-details li {
+  list-style: none;
+  margin-bottom: 8px;
+  font-size: 10px;
+}
+
+/* Trustee */
+.trustee-text {
+  margin-top: 32px;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+}
+.trustees {
+  margin-top: 16px;
+  font-size: 14px;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+/*SUB-BOX */
+
+.sub-parcel-startup-box {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-bottom: 128px;
+}
+
+.sub {
+  flex: 0 1 320px;
+}
+.sub-parcel {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.sub-parcel-text {
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.sub-startup {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.sub-startup-text {
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+/* QUESTIONS */
+.questions li {
+  list-style: none;
+  margin-bottom: 24px;
+  font-size: 14px;
+}
+
+.questions {
+  flex: 0 1 480px;
+}
+
+/* ICONS */
+.icons {
+  width: 14px;
+  height: 8px;
+}
+
+.customer-icons {
+}
+.icons-questions {
+}
