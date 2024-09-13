@@ -27,21 +27,33 @@ body {
   width: 920px;
   margin: 0 auto;
   padding: 0 48px;
+  /* background-color: #0b7285; */
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.07);
+}
+
+.customer {
+  padding: 24px 12px;
+  /* background-color: #0b7285; */
+  margin-top: 32px;
+}
+
+.primary-trustee-box {
+  margin-bottom: 128px;
+  padding: 24px 0;
   background-color: #0b7285;
 }
 
-.primary-trustee-box,
-.sub-box,
-.customer {
+.sub-box {
   margin-bottom: 128px;
   padding: 24px 0;
-  /* background-color: #0b7285; */
-}
-
-.sub-box {
   display: grid;
   justify-items: end;
   background-color: transparent;
+}
+
+.icons-price-box {
+  display: flex;
+  gap: 8px;
 }
 
 .customer-options-logoicon {
@@ -55,6 +67,7 @@ body {
   font-size: 12px;
   display: flex;
   justify-content: space-between;
+  background-color: #0b7285;
 }
 
 .sign-in-box {
@@ -67,17 +80,40 @@ body {
 .trustee-box {
 }
 
+.category-box {
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.07);
+  border-radius: 4px;
+  background-color: white;
+  /* padding: 16px 32px; */
+}
+
+.category-box-essentials {
+  padding: 16px 32px;
+}
+.category-box-premium {
+  padding: 12px 24px;
+}
+.category-box-enterprise {
+  padding: 12px 16px;
+}
+
 a:link {
   text-decoration: none;
   font-size: 12px;
+  color: #e9fac8;
 }
 
 .question-box {
   /* display: grid;
   grid-template-columns: 350px 474px; */
+  box-shadow: 20px 0px 600px 0px rgba(0, 0, 0, 0.07);
   display: flex;
+  justify-content: center;
   gap: 256px;
   margin-bottom: 32px;
+  background-color: white;
+  padding-top: 48px;
+  width: 820px;
 }
 
 /* BTNS */
@@ -102,9 +138,9 @@ a:link {
 }
 .btn-customer-trial {
   padding: 6px 12px;
-  border: 1px solid black;
+  border: 1px solid white;
   background-color: transparent;
-  color: #0b7285;
+  color: #343a40;
 }
 
 .btns-primary-box {
@@ -176,6 +212,7 @@ a:link {
   width: 500px;
   font-size: 44px;
   margin-bottom: 80px;
+  color: #e9fac8;
 }
 
 .customer-options {
@@ -185,6 +222,7 @@ a:link {
 
 .customer-options-logo {
   font-size: 16px;
+  color: #e9fac8;
 }
 
 .customer-options-links {
@@ -194,6 +232,7 @@ a:link {
 }
 
 .sign-in-text {
+  color: #e9fac8;
 }
 
 .sign-in-buttons {
@@ -208,20 +247,29 @@ a:link {
 .secondary-categories {
   display: grid;
   grid-template-columns: 150px 150px 150px;
+  gap: 8px;
 }
 
-.category-top,
-.category-bottom {
+.category-top {
   display: grid;
   justify-items: center;
+}
+
+.category-bottom {
+  background-color: #e9fac8;
+  display: grid;
+  justify-items: center;
+  padding: 8px 0;
+  border-radius: 8px;
 }
 
 .categories {
   margin-top: 32px;
   display: grid;
   justify-items: center;
-
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-rows: repeat(1, minmax(0, 1fr));
+  /* grid-template-columns: repeat(3, 1fr); */
 }
 
 .category-price-details {
@@ -309,13 +357,29 @@ a:link {
 .sub-parcel-startup-box {
   display: flex;
   justify-content: center;
-  gap: 80px;
+  gap: 16px;
   margin-bottom: 128px;
+  /* flex: 1 0 0; */
 }
 
 .sub {
-  flex: 0 1 320px;
+  flex: 0 1 340px;
+  padding: 0 8px;
+  border-radius: 6px;
+  padding: 16px 32px;
 }
+
+.sub-startup-box {
+  background-color: black;
+  color: white;
+  padding: 16px 24px;
+  /* flex: 1 0 0; */
+}
+.sub-parcel-box {
+  background-color: #0b7285;
+  color: #e9fac8;
+}
+
 .sub-parcel {
   margin-bottom: 8px;
   font-size: 16px;
@@ -323,7 +387,8 @@ a:link {
 
 .sub-parcel-text {
   margin-bottom: 16px;
-  font-size: 14px;
+  font-size: 12px;
+  line-height: 1.3;
 }
 
 .sub-startup {
@@ -333,7 +398,8 @@ a:link {
 
 .sub-startup-text {
   margin-bottom: 32px;
-  font-size: 14px;
+  font-size: 12px;
+  line-height: 1.3;
 }
 
 /* QUESTIONS */
@@ -350,9 +416,17 @@ a:link {
 }
 
 /* ICONS */
+
 .icons {
   width: 14px;
   height: 8px;
+}
+
+.icons-prices {
+  width: 10px;
+  height: 12px;
+  border-radius: 50px;
+  background-color: #e9fac8;
 }
 
 .trustee-icons {
@@ -371,6 +445,7 @@ a:link {
   height: 16px;
   align-self: center;
   margin-right: 0;
+  stroke: #e9fac8;
 }
 
 .customer-icons {
@@ -378,3 +453,12 @@ a:link {
 .icons-questions {
   align-self: center;
 }
+
+/* adding shadow using box-shadow property. We can specify 5 values. horizontal offset value,
+vertical offset value, blur value of the shadow, the radius to scale the shadow (optional), color of shadow, */
+/* when shadow is very dark we use the RGBA notation to get get the alpha value and opacity */
+/* we can set the hori offset value to 0 cus we want the shadow to reflect vertically from up to down */
+/* .chair {
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.07);
+  border-radius: 12px;
+} */
